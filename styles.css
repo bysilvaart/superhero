@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
+
+:root{
+    --gray: #fafafa;
+    --artic: #f8f8f8;
+    --siberia: #e7e7e7;
+    --graphite: #c4c4c4;
+    --not-black: #202020;
+
+    --width: 620px;
+    --width-frame: 600;
+    --width-globe-text: 520px;
+    --height-globe-text: 100px;
+
+    --border-radius: 25px;
+}
+
+*{  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: var(--artic);
+    display: grid;
+    place-content: center;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.row{
+    width: var(--width) ;
+    height: var(--width);
+    border: 2px solid var(--graphite);
+    border-radius: var(--border-radius);
+    background-color: white;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row-reverse;
+
+    z-index: 1;
+
+    
+}
+
+.carousel{
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.25s;
+}
+
+.frame>.img{
+    width: var(--width);
+    height: auto;
+    /* margin-top: calc(var(--height-globe-text)*(-1)); */
+    z-index: -1;
+
+    
+}
+
+.buttons{
+    display: flex;
+    width: var(--width);
+    height: auto;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid var(--siberia);
+    border-radius: var(--border-radius);
+    padding: 15px;
+    box-shadow: 0px 15px 30px rgba(32, 32, 32, 0.15);
+}
+
+.buttons>button{
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+.next{
+    background-color: var(--not-black);
+    color: white;
+    border: 1px solid black;
+}
+
+.previous{
+    background-color: var(--artic);
+    color: var(--not-black);
+    border: 1px solid var(--graphite);
+}
+
+.text-globe{
+    width: var(--width-globe-text);
+    height: var(--height-globe-text);
+    background-color: white;
+    border: 2px solid var(--siberia);
+    box-sizing: border-box;
+    box-shadow: 0px 15px 30px rgba(32, 32, 32, 0.15);
+    border-radius: var(--border-radius);
+
+    margin: 0 auto;
+
+    display: grid;
+    place-content: center;
+    position: absolute; 
+    margin-right: 50px;
+
+    z-index: 2;
+
+    transition: transform 1s ease-in-out;
+    transform: translateY(-50%);
+    animation-delay: 100ms;
+    }
+
