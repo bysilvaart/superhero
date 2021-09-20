@@ -9,8 +9,8 @@
 
     --width: 620px;
     --width-frame: 600;
-    --width-globe-text: 520px;
-    --height-globe-text: 100px;
+    --width-globe-text: 250px;
+    --height-globe-text: 250px;
 
     --border-radius: 25px;
 }
@@ -106,22 +106,26 @@ body{
     height: var(--height-globe-text);
     background-color: white;
     border: 2px solid var(--siberia);
-    box-sizing: border-box;
+    padding: 30px;
+    text-align: center;
     box-shadow: 0px 15px 30px rgba(32, 32, 32, 0.15);
-    border-radius: var(--border-radius);
+    border-radius: calc(var(--height-globe-text)/3);
 
-    margin: 0 auto;
+    
 
     display: grid;
     place-content: center;
     position: absolute; 
-    margin-right: 50px;
+    margin-right: -50px;
+    top: 200px;
 
     z-index: 2;
 
     transition: transform 1s ease-in-out;
+    animation-name: globe-text;
+    animation-delay: 0.2s;
     transform: translateY(-50%);
-    animation-delay: 100ms;
+   
     }
 
     .frame>.img{
@@ -141,6 +145,12 @@ body{
             animation-duration: 0.8s;
             animation-timing-function: ease-in;
         }
+
+    .frame>.scene-02{
+        
+        background: var(--graphite);
+
+    }
 
         @keyframes scene-01 {
             0%{
