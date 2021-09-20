@@ -63,14 +63,6 @@ body{
     transition: transform 0.25s;
 }
 
-.frame>.img{
-    width: var(--width);
-    height: auto;
-    /* margin-top: calc(var(--height-globe-text)*(-1)); */
-    z-index: -1;
-
-    
-}
 
 .buttons{
     display: flex;
@@ -132,3 +124,39 @@ body{
     animation-delay: 100ms;
     }
 
+    .frame>.img{
+        background-size: 100%;
+        width: var(--width);
+        height: var(--width);
+        z-index: -1;
+        width: var(--width);
+        height: var(--width);
+        animation-iteration-count: infinite;
+    }
+    
+    .frame>.scene-01{
+            
+            background-image: url("./img/scene-01-a.JPG");
+            animation-name: scene-01;
+            animation-duration: 0.8s;
+            animation-timing-function: ease-in;
+        }
+
+        @keyframes scene-01 {
+            0%{
+                background-image: url("./img/scene-01-a.JPG");
+                background-size: 100%;
+            }
+            50%{
+                background-image: url("./img/scene-01-a.JPG");
+                background-size: 100%;
+            }
+            80%{
+                background-image: url("./img/scene-01-b.JPG");
+                background-size: 100%;
+            }
+            100%{
+                background-image: url("./img/scene-01-b.JPG");
+                background-size: 100%;
+            }
+        }

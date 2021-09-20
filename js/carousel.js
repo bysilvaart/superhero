@@ -1,11 +1,13 @@
 const carouselImages = document.querySelector('.carousel');
 const carouselButtons = document.querySelectorAll('.carousel__button');
-const numberOfImages = document.querySelectorAll('.carousel img').length;
+const numberOfImages = document.querySelectorAll('.carousel .img').length;
 var widthFrame = 620;
 let dialogue = ["","Hola","voy a contarte", "mi historia","para el reto"];
 let imageIndex = 1;
 let translateX = 0;
 
+let text = "Hola";
+    document.getElementById("text").innerHTML = text;
 
 carouselButtons.forEach(button => {
   button.addEventListener('click', (event) => {
@@ -27,5 +29,4 @@ carouselButtons.forEach(button => {
   });
 });
 
-/* let text = "Hola";
-    document.getElementById("text").innerHTML = text; */
+
