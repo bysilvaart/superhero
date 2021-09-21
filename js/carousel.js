@@ -1,7 +1,12 @@
 const carouselImages = document.querySelector('.carousel');
 const carouselButtons = document.querySelectorAll('.carousel__button');
 const numberOfImages = document.querySelectorAll('.carousel .img').length;
-var widthFrame = 620;
+var widthFrame = 570;
+/* var widthFrame = windows.getComputedStyle.getPropertyValue('--width'); */
+/* var widthFrame = document.documentElement.style.getPropertyValue('--width'); */
+/* var widthFrame = getComputedStyle(document.documentElement).getPropertyValue('--width'); */
+/* var widthFrame = styler(':root').get(['--width:']); */
+
 let dialogue = ["","¡Hola!<br>Como puedes notar me veo como una persona normal",
 "A quien le gusta mucho usar su teléfono",
 "Pero...<br>¿Qué pensarías si te dijera que esto es un arma?",
@@ -21,11 +26,12 @@ let dialogue = ["","¡Hola!<br>Como puedes notar me veo como una persona normal"
 "Aunque muchas veces me siento como Kira.",
 "Con mi teléfono y mi notebook hago que los criminales más grandes...",
 "...mueran."];
+
 let imageIndex = 1;
 let translateX = 0;
 
 
-    document.getElementById("text").innerHTML = dialogue[1];
+document.getElementById("text").innerHTML = dialogue[1];
 
 carouselButtons.forEach(button => {
   button.addEventListener('click', (event) => {
