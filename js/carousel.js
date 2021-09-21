@@ -1,11 +1,9 @@
 const carouselImages = document.querySelector('.carousel');
 const carouselButtons = document.querySelectorAll('.carousel__button');
 const numberOfImages = document.querySelectorAll('.carousel .img').length;
-var widthFrame = 570;
-/* var widthFrame = windows.getComputedStyle.getPropertyValue('--width'); */
-/* var widthFrame = document.documentElement.style.getPropertyValue('--width'); */
-/* var widthFrame = getComputedStyle(document.documentElement).getPropertyValue('--width'); */
-/* var widthFrame = styler(':root').get(['--width:']); */
+/* var widthFrame = 570; */
+const widthFrame = getComputedStyle(document.documentElement).getPropertyValue("--width").split('px')[0]
+
 
 let dialogue = ["","¡Hola!<br>Como puedes notar me veo como una persona normal",
 "A quien le gusta mucho usar su teléfono",
@@ -38,13 +36,13 @@ carouselButtons.forEach(button => {
     if (event.target.id === 'previous') {
       if (imageIndex !== 1) {
         imageIndex--;
-        translateX -= widthFrame;
+        translateX -= parseInt(widthFrame);
         document.getElementById("text").innerHTML = dialogue[imageIndex];
       }
     } else {
       if (imageIndex !== numberOfImages) {
         imageIndex++;
-        translateX += widthFrame;
+        translateX += parseInt(widthFrame);
         document.getElementById("text").innerHTML = dialogue[imageIndex];
       }
     }
@@ -54,3 +52,4 @@ carouselButtons.forEach(button => {
 });
 
 
+console.log(widthFrame);

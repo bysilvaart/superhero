@@ -8,7 +8,7 @@
     --graphite: #c4c4c4;
     --not-black: #202020;
 
-    --width: 570px;
+    --width: 620px;
     --width-globe-text: 200px;
     --height-globe-text: 300px;
 
@@ -171,7 +171,51 @@ body{
 
         
 @media screen and (max-height:720px){
+
+    :root{
+        --width: 570px;
+    }
+
     .buttons>button{
         width: 30vh;
     }
+}
+
+@media screen and (max-width:480px){
+
+    :root{
+        --width: 300px;
+        --width-globe-text: 130px;
+        --height-globe-text: 240px;
+    }
+
+
+    .buttons>button{
+        width: 35vw;
+    }
+
+    .buttons>button{
+        font-size: 14px;
+    }
+
+    .text-globe{
+        padding: 20px;     
+        font-size: 12px;
+        
+    
+        display: grid;
+        place-content: center;
+        position: absolute; 
+        right: -15px;
+        top: 100px;
+    
+        z-index: 3;
+    
+        transition: transform 1s ease-in-out;
+        animation-name: globe-text;
+        animation-delay: 0.2s;
+        transform: translateY(-50%);
+       
+        }
+
 }
