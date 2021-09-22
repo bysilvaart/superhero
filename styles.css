@@ -32,7 +32,7 @@ body{
 
 .container{
     width: 100vw;
-    height: auto;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,9 +45,9 @@ body{
     width: var(--width) ;
     height: var(--width);
     border: 2px solid var(--graphite);
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius) var(--border-radius) 0 0 ;
     background-color: white;
-   overflow: hidden;
+    overflow: hidden;
 
     display: flex;
     flex-direction: row-reverse;
@@ -75,6 +75,25 @@ body{
     border-radius: var(--border-radius);
     padding: 15px;
     box-shadow: 0px 15px 30px rgba(32, 32, 32, 0.15);
+
+}
+
+.next{
+    
+    animation-duration: 1.8s;
+    animation-timing-function: ease;
+    animation-name: float;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-5%);
+    }
 }
 
 .buttons>button{
@@ -102,14 +121,29 @@ body{
     border: 1px solid var(--graphite);
 }
 
+
 .text-globe{
+    width: var(--width);
+    height: 100px;
+    background-color: white;
+    border: 2px solid var(--graphite);
+    padding: 40px;
+    text-align: center;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+
+    display: grid;
+    place-content: center;
+    z-index: 3;
+   
+    }
+
+/* .text-globe{
     width: var(--width-globe-text);
     height: var(--height-globe-text);
     background-color: white;
     border: 2px solid var(--graphite);
     padding: 40px;
     text-align: center;
-    /* box-shadow: 0px 15px 30px rgba(32, 32, 32, 0.15); */
     border-radius: 50%;
 
     
@@ -127,7 +161,7 @@ body{
     animation-delay: 0.2s;
     transform: translateY(-50%);
    
-    }
+    } */
 
     .frame>.img{
         background-size: 100%;
@@ -174,18 +208,30 @@ body{
         
         }
 
-        
+/*small desktop*/     
 @media screen and (max-height:720px){
 
     :root{
-        --width: 570px;
+        --width: 480px;
+    }
+
+    
+    .container{
+        gap: 10px;
     }
 
     .buttons>button{
-        width: 30vh;
+        font-size: 15px;
+        width: 20vw;
+    }
+
+    .text-globe{
+        height: 80px;
+        padding: 20px;
     }
 }
 
+/*mobile*/
 @media screen and (max-width:480px){
 
     :root{
@@ -195,32 +241,24 @@ body{
     }
 
 
-    .buttons>button{
-        width: 35vw;
+    .buttons{
+        padding: 10px;
+    }
+
+    .container{
+        gap: 15px;
     }
 
     .buttons>button{
-        font-size: 14px;
+        font-size: 15px;
+        width: 120px;
     }
 
     .text-globe{
-        padding: 20px;     
-        font-size: 12px;
-        
-    
-        display: grid;
-        place-content: center;
-        position: absolute; 
-        right: -15px;
-        top: 100px;
-    
-        z-index: 3;
-    
-        transition: transform 1s ease-in-out;
-        animation-name: globe-text;
-        animation-delay: 0.2s;
-        transform: translateY(-50%);
-       
-        }
+        height: 120px;
+        padding: 20px;
+    }
+}
+
 
 }
