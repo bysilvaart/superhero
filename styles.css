@@ -147,24 +147,29 @@ body{
             animation-timing-function: ease-in;
         }
 
+        .frame>.scene-02{
+            
+            background-image: url("./img/scene-02-a.JPG");
+            animation-name: ;
+            animation-duration: 0.8s;
+            animation-timing-function: ease-in;
+        }
+
+
 
 
         @keyframes scene-01 {
             0%{
-                background-image: url("./img/scene-01-a.JPG");
-                background-size: 100%;
+                background-image: url("./img/scene-01-a.JPG");    
             }
             50%{
-                background-image: url("./img/scene-01-a.JPG");
-                background-size: 100%;
+                background-image: url("./img/scene-01-a.JPG");      
             }
             51%{
-                background-image: url("./img/scene-01-b.JPG");
-                background-size: 100%;
+                background-image: url("./img/scene-01-b.JPG");               
             }
             99%{
-                background-image: url("./img/scene-01-b.JPG");
-                background-size: 100%;
+                background-image: url("./img/scene-01-b.JPG");          
             }
         
         }
