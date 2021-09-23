@@ -216,6 +216,14 @@ body{
         background-image: url("./img/scene-07.JPG");
     }
 
+    .frame>.scene-08{
+        
+        background-image: url("./img/scene-08-a.PNG");
+        animation-name: scene-08 ;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in;
+    }
+
     .bg-01, .bg-02, .bg-03, .black-bg, .effect-01, .bg-03-down{
         position: absolute;
         top: 0;
@@ -309,6 +317,34 @@ body{
             50%{
                 transform: translateY(-4%);
             }
+        }
+
+        @keyframes scene-08 {
+            0%{
+                background-image: url("./img/scene-08-a.PNG");    
+            }
+            24%{
+                background-image: url("./img/scene-08-a.PNG");      
+            }
+            25%{
+                background-image: url("./img/scene-08-b.PNG");               
+            }
+            49%{
+                background-image: url("./img/scene-08-b.PNG");          
+            }
+            50%{
+                background-image: url("./img/scene-08-c.PNG");          
+            }
+            74%{
+                background-image: url("./img/scene-08-c.PNG");          
+            }
+            75%{
+                background-image: url("./img/scene-08-d.PNG");          
+            }
+            99%{
+                background-image: url("./img/scene-08-d.PNG");          
+            }
+        
         }
 
 /*small desktop*/     
