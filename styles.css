@@ -175,7 +175,7 @@ body{
     
     .frame>.scene-01{
             
-        background-image: url("./img/scene-01-a.png");
+        background-image: url("./img/scene-01-a.PNG");
         animation-name: scene-01;
         animation-duration: 0.8s;
         animation-timing-function: ease-in;
@@ -183,7 +183,7 @@ body{
 
     .frame>.scene-02{
         
-        background-image: url("./img/scene-02-a.png");
+        background-image: url("./img/scene-02-a.PNG");
         animation-name: ;
         animation-duration: 0.8s;
         animation-timing-function: ease-in;
@@ -191,21 +191,21 @@ body{
 
     .frame>.scene-03{
         
-        background-image: url("./img/scene-03-a.png");
+        background-image: url("./img/scene-03-a.PNG");
         animation-name: ;
         animation-duration: 0.8s;
         animation-timing-function: ease-in;
     }
 
     .bg-01{
-        background-image: url("./img/bg-01.jpg");
+        background-image: url("./img/bg-01.JPG");
         position: absolute;
         top: 0;
 
     }
 
     .bg-02{
-        background-image: url("./img/bg-02.jpg");
+        background-image: url("./img/bg-02.JPG");
         position: absolute;
         top: 0;
 
@@ -216,16 +216,16 @@ body{
 
         @keyframes scene-01 {
             0%{
-                background-image: url("./img/scene-01-a.png");    
+                background-image: url("./img/scene-01-a.PNG");    
             }
             50%{
-                background-image: url("./img/scene-01-a.png");      
+                background-image: url("./img/scene-01-a.PNG");      
             }
             51%{
-                background-image: url("./img/scene-01-b.png");               
+                background-image: url("./img/scene-01-b.PNG");               
             }
             99%{
-                background-image: url("./img/scene-01-b.png");          
+                background-image: url("./img/scene-01-b.PNG");          
             }
         
         }
@@ -257,7 +257,7 @@ body{
 @media screen and (max-width:480px){
 
     :root{
-        --width: 300px;
+        --width: 330px;
         --width-globe-text: 130px;
         --height-globe-text: 240px;
     }
@@ -269,6 +269,8 @@ body{
 
     .container{
         gap: 15px;
+        justify-content: flex-start;
+        padding-top: 15px;
     }
 
     .buttons>button{
