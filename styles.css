@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
 
 :root{
     --gray: #fafafa;
@@ -92,7 +92,7 @@ body{
         transform: translateY(0%);
     }
     50%{
-        transform: translateY(-5%);
+        transform: translateY(-8%);
     }
 }
 
@@ -134,7 +134,10 @@ body{
     display: grid;
     place-content: center;
     z-index: 3;
-    font-size: 16px;
+
+    font-family: 'Comic Neue', cursive;
+    font-weight: 700;
+    font-size: 18px;
    
     }
 
@@ -192,24 +195,43 @@ body{
         animation-timing-function: ease-in;
     }
 
-    .bg-01{
-        background-image: url("./img/bg-01.JPG");
+    .frame>.scene-05{
+        
+        background-image: url("./img/scene-05-a.PNG");
+        animation-name: ;
+        animation-duration: 0.8s;
+        animation-timing-function: ease-in;
+    }
+
+    .bg-01, .bg-02, .black-bg, .effect-01{
         position: absolute;
         top: 0;
+    }
+
+    .bg-01{
+        background-image: url("./img/bg-01.JPG");
+        
 
     }
 
     .bg-02{
         background-image: url("./img/bg-02.JPG");
-        position: absolute;
-        top: 0;
+       
 
+    }
+
+    .black-bg{
+        background: black;
+
+    }
+
+    .white-bg{
+        background: white;
     }
 
     .effect-01{
         background-image: url("./img/effect-01.PNG");
-        position: absolute;
-        top: 0;
+     
 
     }
 
