@@ -224,7 +224,35 @@ body{
         animation-timing-function: ease-in;
     }
 
-    .bg-01, .bg-02, .bg-03, .black-bg, .effect-01, .bg-03-down{
+    
+    .frame>.scene-09-chess{
+        
+        background-image: url("./img/scene-09-chess.PNG");
+        animation-name: scene-09-chess ;
+        animation-duration: 2.5s;
+        animation-timing-function: ease-in;
+        
+    }
+
+    
+    .frame>.scene-09-pizza{
+        
+        background-image: url("./img/scene-09-pizza.PNG");
+        animation-name: scene-09-pizza ;
+        animation-duration: 3.5s;
+        animation-timing-function: ease-in;
+    }
+
+    
+    .frame>.scene-09-books{
+        
+        background-image: url("./img/scene-09-books.PNG");
+        animation-name: scene-09-books ;
+        animation-duration: 3s;
+        animation-timing-function: ease-in;
+    }
+
+    .bg-01, .bg-02, .bg-03, .black-bg, .effect-01, .bg-03-down, .scene-09-books, .scene-09-pizza{
         position: absolute;
         top: 0;
     }
@@ -265,6 +293,34 @@ body{
         animation-duration: 10s;
         animation-delay: 0.2s;
     }
+
+    @keyframes scene-09-chess {
+        0%{
+            transform: translateY(0%);
+        }
+        50%{
+            transform: translateY(-8%);
+        }
+    }
+
+    @keyframes scene-09-pizza {
+        0%{
+            transform: translateY(0%);
+        }
+        50%{
+            transform: translateY(-10%);
+        }
+    }
+
+    @keyframes scene-09-books {
+        0%{
+            transform: translateY(0%);
+        }
+        50%{
+            transform: translateY(-6%);
+        }
+    }
+    
 
     @keyframes down {
         0%{
