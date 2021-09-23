@@ -175,35 +175,57 @@ body{
     
     .frame>.scene-01{
             
-            background-image: url("./img/scene-01-a.JPG");
-            animation-name: scene-01;
-            animation-duration: 0.8s;
-            animation-timing-function: ease-in;
-        }
+        background-image: url("./img/scene-01-a.png");
+        animation-name: scene-01;
+        animation-duration: 0.8s;
+        animation-timing-function: ease-in;
+    }
 
-        .frame>.scene-02{
-            
-            background-image: url("./img/scene-02-a.JPG");
-            animation-name: ;
-            animation-duration: 0.8s;
-            animation-timing-function: ease-in;
-        }
+    .frame>.scene-02{
+        
+        background-image: url("./img/scene-02-a.png");
+        animation-name: ;
+        animation-duration: 0.8s;
+        animation-timing-function: ease-in;
+    }
+
+    .frame>.scene-03{
+        
+        background-image: url("./img/scene-03-a.png");
+        animation-name: ;
+        animation-duration: 0.8s;
+        animation-timing-function: ease-in;
+    }
+
+    .bg-01{
+        background-image: url("./img/bg-01.jpg");
+        position: absolute;
+        top: 0;
+
+    }
+
+    .bg-02{
+        background-image: url("./img/bg-02.jpg");
+        position: absolute;
+        top: 0;
+
+    }
 
 
 
 
         @keyframes scene-01 {
             0%{
-                background-image: url("./img/scene-01-a.JPG");    
+                background-image: url("./img/scene-01-a.png");    
             }
             50%{
-                background-image: url("./img/scene-01-a.JPG");      
+                background-image: url("./img/scene-01-a.png");      
             }
             51%{
-                background-image: url("./img/scene-01-b.JPG");               
+                background-image: url("./img/scene-01-b.png");               
             }
             99%{
-                background-image: url("./img/scene-01-b.JPG");          
+                background-image: url("./img/scene-01-b.png");          
             }
         
         }
