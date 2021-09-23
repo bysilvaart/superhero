@@ -134,34 +134,9 @@ body{
     display: grid;
     place-content: center;
     z-index: 3;
+    font-size: 16px;
    
     }
-
-/* .text-globe{
-    width: var(--width-globe-text);
-    height: var(--height-globe-text);
-    background-color: white;
-    border: 2px solid var(--graphite);
-    padding: 40px;
-    text-align: center;
-    border-radius: 50%;
-
-    
-
-    display: grid;
-    place-content: center;
-    position: absolute; 
-    right: -30px;
-    top: 120px;
-
-    z-index: 3;
-
-    transition: transform 1s ease-in-out;
-    animation-name: globe-text;
-    animation-delay: 0.2s;
-    transform: translateY(-50%);
-   
-    } */
 
     .frame>.img{
         background-size: 100%;
@@ -209,6 +184,14 @@ body{
         animation-timing-function: ease-in;
     }
 
+    .frame>.scene-04{
+        
+        background-image: url("./img/scene-04-a.PNG");
+        animation-name: ;
+        animation-duration: 0.8s;
+        animation-timing-function: ease-in;
+    }
+
     .bg-01{
         background-image: url("./img/bg-01.JPG");
         position: absolute;
@@ -218,6 +201,13 @@ body{
 
     .bg-02{
         background-image: url("./img/bg-02.JPG");
+        position: absolute;
+        top: 0;
+
+    }
+
+    .effect-01{
+        background-image: url("./img/effect-01.PNG");
         position: absolute;
         top: 0;
 
