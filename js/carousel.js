@@ -1,7 +1,6 @@
 const carouselImages = document.querySelector('.carousel');
 const carouselButtons = document.querySelectorAll('.carousel__button');
 const numberOfImages = document.querySelectorAll('.carousel .img').length;
-/* var widthFrame = 570; */
 const widthFrame = getComputedStyle(document.documentElement).getPropertyValue("--width").split('px')[0]
 
 
@@ -14,7 +13,8 @@ let dialogue = ["","¡Hola!<br>Como puedes notar me veo como una persona normal"
 "Yo no necesito dormir.",
 "Asi que desde pequeño he tenido mucho más tiempo que los demás para hacer más cosas.",
 "Jugué mucho más, comí mucho más y por supuesto, aprendí mucho más.",
-"Inventé un sistema operativo con el cuál puedo hacer muchas cosas.<br>Digamos que mi smartphone es el mejor espía del planeta.",
+"Inventé un sistema operativo con el cuál puedo hacer muchas cosas.",
+"Digamos que mi smartphone es el mejor espía del planeta.",
 "Como podrás adivinar, descubrí muchas cosas. Cosas que no me creerías si te las dijera.",
 "Cosas que deben ser detenidas.",
 "Alguien debe hacer algo.",
@@ -52,4 +52,5 @@ carouselButtons.forEach(button => {
 });
 
 
-console.log(widthFrame);
+console.log(widthFrame+"px de ancho y alto para el panel");
+console.log(numberOfImages+" viñetas");

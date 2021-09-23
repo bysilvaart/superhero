@@ -10,7 +10,7 @@
 
     --width: 620px;
     --width-globe-text: 200px;
-    --height-globe-text: 300px;
+    --height-globe-text: 100px;
 
     --border-radius: 25px;
 }
@@ -124,7 +124,7 @@ body{
 
 .text-globe{
     width: var(--width);
-    height: 100px;
+    height: var(--height-globe-text);
     background-color: white;
     border: 2px solid var(--graphite);
     padding: 40px;
@@ -172,6 +172,18 @@ body{
         height: var(--width);
         animation-iteration-count: infinite;
     }
+
+    
+    .frame>.bg-img{
+        background-size: 100%;
+        width: var(--width);
+        height: var(--width);
+        z-index: -1;
+        width: var(--width);
+        height: var(--width);
+        animation-iteration-count: infinite;
+    }
+    
     
     .frame>.scene-01{
             
@@ -254,12 +266,12 @@ body{
 }
 
 /*mobile*/
-@media screen and (max-width:480px){
+@media screen and (max-width:330px){
 
     :root{
-        --width: 330px;
+        --width: 300px;
         --width-globe-text: 130px;
-        --height-globe-text: 240px;
+        --height-globe-text: 280px;
     }
 
 
@@ -284,5 +296,67 @@ body{
     }
 }
 
+@media screen and (min-width:331px) and (max-width:399px){
 
+    :root{
+        --width: 330px;
+        --width-globe-text: 130px;
+        --height-globe-text: 280px;
+    }
+
+
+    .buttons{
+        padding: 10px;
+    }
+
+    .container{
+        gap: 15px;
+        justify-content: flex-start;
+        padding-top: 15px;
+    }
+
+    .buttons>button{
+        font-size: 15px;
+        width: 120px;
+    }
+
+    .text-globe{
+        height: 120px;
+        padding: 20px;
+    }
 }
+
+@media screen and (min-width:400px) and (max-width:480px){
+
+    :root{
+        --width: 370px;
+        --width-globe-text: 130px;
+        --height-globe-text: 300px;
+    }
+
+
+    .buttons{
+        padding: 10px;
+    }
+
+    .container{
+        gap: 15px;
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+
+    .buttons>button{
+        font-size: 15px;
+        width: 120px;
+    }
+
+    .text-globe{
+        height: 120px;
+        padding: 20px;
+    }
+}
+
+
+
+
+
