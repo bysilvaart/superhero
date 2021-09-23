@@ -211,7 +211,12 @@ body{
         animation-timing-function: ease-in;
     }
 
-    .bg-01, .bg-02, .black-bg, .effect-01, .bg-02-down{
+    .frame>.scene-07{
+        
+        background-image: url("./img/scene-07.JPG");
+    }
+
+    .bg-01, .bg-02, .bg-03, .black-bg, .effect-01, .bg-03-down{
         position: absolute;
         top: 0;
     }
@@ -228,8 +233,8 @@ body{
 
     }
 
-    .bg-02-down{
-        background-image: url("./img/bg-02.JPG");
+    .bg-03-down{
+        background-image: url("./img/bg-03.JPG");
         animation-name: down;
         animation-timing-function: ease-in;
         animation-duration: 10s;

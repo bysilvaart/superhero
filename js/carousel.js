@@ -38,12 +38,14 @@ carouselButtons.forEach(button => {
         imageIndex--;
         translateX -= parseInt(widthFrame);
         document.getElementById("text").innerHTML = dialogue[imageIndex];
+        console.log("viñeta: "+imageIndex);
       }
     } else {
       if (imageIndex !== numberOfImages) {
         imageIndex++;
         translateX += parseInt(widthFrame);
         document.getElementById("text").innerHTML = dialogue[imageIndex];
+        console.log("viñeta: "+imageIndex);
       }
     }
     
