@@ -182,8 +182,8 @@ body{
     .frame>.scene-03{
         
         background-image: url("./img/scene-03-a.PNG");
-        animation-name: ;
-        animation-duration: 0.8s;
+        animation-name: scene-03;
+        animation-duration: 1.5s;
         animation-timing-function: ease-in;
     }
 
@@ -203,7 +203,15 @@ body{
         animation-timing-function: ease-in;
     }
 
-    .bg-01, .bg-02, .black-bg, .effect-01{
+    .frame>.scene-06{
+        
+        background-image: url("./img/scene-06-a.PNG");
+        animation-name: scene-06 ;
+        animation-duration: 1.8s;
+        animation-timing-function: ease-in;
+    }
+
+    .bg-01, .bg-02, .black-bg, .effect-01, .bg-02-down{
         position: absolute;
         top: 0;
     }
@@ -220,6 +228,14 @@ body{
 
     }
 
+    .bg-02-down{
+        background-image: url("./img/bg-02.JPG");
+        animation-name: down;
+        animation-timing-function: ease-in;
+        animation-duration: 10s;
+        animation-delay: 0.2s;
+    }
+
     .black-bg{
         background: black;
 
@@ -231,14 +247,25 @@ body{
 
     .effect-01{
         background-image: url("./img/effect-01.PNG");
-     
-
+        animation-name: down;
+        animation-timing-function: ease-in;
+        animation-duration: 10s;
+        animation-delay: 0.2s;
     }
 
+    @keyframes down {
+        0%{
+            transform: translateY(0%);
+        }
+        99%{
+            transform: translateY(100%);
+        }
+        100%{
+            transform: translateY(0%);
+        } 
+    }
 
-
-
-        @keyframes scene-01 {
+    @keyframes scene-01 {
             0%{
                 background-image: url("./img/scene-01-a.PNG");    
             }
@@ -252,6 +279,31 @@ body{
                 background-image: url("./img/scene-01-b.PNG");          
             }
         
+        }
+
+        @keyframes scene-03 {
+            0%{
+                background-image: url("./img/scene-03-a.PNG");    
+            }
+            30%{
+                background-image: url("./img/scene-03-a.PNG");      
+            }
+            50%{
+                background-image: url("./img/scene-03-b.PNG");               
+            }
+            80%{
+                background-image: url("./img/scene-03-b.PNG");          
+            }
+        
+        }
+
+        @keyframes scene-06 {
+            0%{
+                transform: translateY(0%);
+            }
+            50%{
+                transform: translateY(-4%);
+            }
         }
 
 /*small desktop*/     
