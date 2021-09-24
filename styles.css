@@ -257,6 +257,14 @@ body{
         background-image: url("./img/scene-10-a.PNG");
     }
 
+    .frame>.scene-11{
+        
+        background-image: url("./img/scene-11-a.PNG");
+        animation-name: scene-11 ;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+    }
+
     .bg-01, .bg-02, .bg-03, .black-bg, .effect-01, .bg-03-down, .scene-09-books, .scene-09-pizza{
         position: absolute;
         top: 0;
@@ -297,6 +305,15 @@ body{
         animation-timing-function: ease-in;
         animation-duration: 10s;
         animation-delay: 0.2s;
+    }
+
+    @keyframes scene-11 {
+        0%{
+            background-image: url("./img/scene-11-a.PNG");    
+        }
+        50%{
+            background-image: url("./img/scene-11-b.PNG");      
+        }
     }
 
     @keyframes scene-09-chess {
