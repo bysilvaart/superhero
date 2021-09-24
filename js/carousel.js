@@ -13,7 +13,7 @@ let dialogue = ["","¡Hola!<br>Como puedes notar me veo como una persona normal"
 "Yo no necesito dormir.",
 "Asi que desde pequeño he tenido mucho más tiempo que los demás para hacer más cosas.",
 "Jugué mucho más, comí mucho más y por supuesto, aprendí mucho más.",
-"Inventé un sistema operativo con el cuál puedo hacer muchas cosas.",
+"Inventé un sistema operativo con el cual puedo hacer muchas cosas.",
 "Digamos que mi smartphone es el mejor espía del planeta.",
 "Como podrás adivinar, descubrí muchas cosas. Cosas que no me creerías si te las dijera.",
 "Cosas que deben ser detenidas.",
