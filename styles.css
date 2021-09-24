@@ -54,9 +54,8 @@ body{
 
     z-index: 1;
     position: relative;
-
-    
 }
+
 
 .carousel{
     display: flex;
@@ -139,6 +138,9 @@ body{
     font-weight: 700;
     font-size: 18px;
    
+    }
+    .frame{
+        overflow: hidden;
     }
 
     .frame>.img{
@@ -265,21 +267,35 @@ body{
         animation-timing-function: ease-in;
     }
 
+    .frame>.scene-12{
+        
+        background-image: url("./img/scene-12.PNG");
+    }
+
+    .frame>.scene-13{
+        
+        background-image: url("./img/scene-13.PNG");
+        animation-name: scene-13 ;
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+    }
+
     .bg-01, .bg-02, .bg-03, .black-bg, .effect-01, .bg-03-down, .scene-09-books, .scene-09-pizza{
         position: absolute;
         top: 0;
     }
 
     .bg-01{
-        background-image: url("./img/bg-01.JPG");
-        
+        background-image: url("./img/bg-01.JPG");    
 
     }
 
     .bg-02{
         background-image: url("./img/bg-02.JPG");
-       
+    }
 
+    .bg-03{
+        background-image: url("./img/bg-03.JPG"); 
     }
 
     .bg-03-down{
@@ -305,6 +321,15 @@ body{
         animation-timing-function: ease-in;
         animation-duration: 10s;
         animation-delay: 0.2s;
+    }
+
+    @keyframes scene-13 {
+        0%{
+            transform: scale(1);   
+        }
+        50%{
+            transform: scale(1.1);        
+        }
     }
 
     @keyframes scene-11 {
