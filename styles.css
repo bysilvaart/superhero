@@ -151,6 +151,7 @@ body{
         width: var(--width);
         height: var(--width);
         animation-iteration-count: infinite;
+        display: grid;
     }
 
     
@@ -281,6 +282,18 @@ body{
         animation-name: scene-15 ;
         animation-duration: 3.5s;
         animation-timing-function: ease-in;
+    }
+
+    .scene-16{
+        
+        color: white;
+        place-self: center;
+        font-size: 8vw;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+        animation-name: float;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
     }
 
     .bg-01, .bg-02, .bg-03, .black-bg, .effect-01, .bg-03-down, .scene-09-books, .scene-09-pizza{
