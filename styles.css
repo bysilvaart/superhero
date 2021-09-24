@@ -176,9 +176,6 @@ body{
     .frame>.scene-02{
         
         background-image: url("./img/scene-02-a.PNG");
-        animation-name: ;
-        animation-duration: 0.8s;
-        animation-timing-function: ease-in;
     }
 
     .frame>.scene-03{
@@ -190,19 +187,12 @@ body{
     }
 
     .frame>.scene-04{
-        
         background-image: url("./img/scene-04-a.PNG");
-        animation-name: ;
-        animation-duration: 0.8s;
-        animation-timing-function: ease-in;
     }
 
     .frame>.scene-05{
         
         background-image: url("./img/scene-05-a.PNG");
-        animation-name: ;
-        animation-duration: 0.8s;
-        animation-timing-function: ease-in;
     }
 
     .frame>.scene-06{
@@ -285,6 +275,14 @@ body{
         background-image: url("./img/scene-14.PNG");
     }
 
+    .frame>.scene-15{
+        
+        background-image: url("./img/scene-15-a.PNG");
+        animation-name: scene-15 ;
+        animation-duration: 3.5s;
+        animation-timing-function: ease-in;
+    }
+
     .bg-01, .bg-02, .bg-03, .black-bg, .effect-01, .bg-03-down, .scene-09-books, .scene-09-pizza{
         position: absolute;
         top: 0;
@@ -308,7 +306,7 @@ body{
         animation-name: down;
         animation-timing-function: ease-in;
         animation-duration: 10s;
-        animation-delay: 0.2s;
+        animation-delay: 1s;
     }
 
     .black-bg{
@@ -325,8 +323,9 @@ body{
         animation-name: down;
         animation-timing-function: ease-in;
         animation-duration: 10s;
-        animation-delay: 0.2s;
+        animation-delay: 1s;
     }
+
 
     @keyframes scene-13 {
         0%{
@@ -454,6 +453,24 @@ body{
             }
         
         }
+
+    @keyframes scene-15 {
+        0%{
+            background-image: url("./img/scene-15-a.PNG");    
+        }
+        30%{
+            background-image: url("./img/scene-15-a.PNG");    
+        }
+        40%{
+            background-image: url("./img/scene-15-b.PNG");      
+        }
+        70%{
+            background-image: url("./img/scene-15-b.PNG");      
+        }
+        80%{
+            background-image: url("./img/scene-15-a.PNG");      
+        }
+    }
 
 /*small desktop*/     
 @media screen and (max-height:720px){
