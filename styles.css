@@ -288,10 +288,10 @@ body{
         
         color: white;
         place-self: center;
-        font-size: 8vw;
+        font-size: 6vw;
         animation-duration: 3s;
-        animation-timing-function: ease;
-        animation-name: float;
+        animation-timing-function: ease-in-out;
+        animation-name: float-text;
         animation-delay: 2s;
         animation-iteration-count: infinite;
     }
@@ -339,6 +339,14 @@ body{
         animation-delay: 1s;
     }
 
+    @keyframes float-text {
+        0%{
+            transform: translateY(0%);
+        }
+        50%{
+            transform: translateY(-15%);
+        }
+    }
 
     @keyframes scene-13 {
         0%{
@@ -514,7 +522,7 @@ body{
     :root{
         --width: 300px;
         --width-globe-text: 130px;
-        --height-globe-text: 280px;
+        --height-globe-text: 300px;
     }
 
 
@@ -536,6 +544,7 @@ body{
     .text-globe{
         height: 120px;
         padding: 20px;
+        font-size: 20px;
     }
 }
 
@@ -566,6 +575,7 @@ body{
     .text-globe{
         height: 120px;
         padding: 20px;
+        font-size: 20px;
     }
 }
 
@@ -596,6 +606,7 @@ body{
     .text-globe{
         height: 120px;
         padding: 20px;
+        font-size: 20px;
     }
 }
 
