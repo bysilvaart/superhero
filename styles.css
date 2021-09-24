@@ -252,6 +252,11 @@ body{
         animation-timing-function: ease-in;
     }
 
+    .frame>.scene-10{
+        
+        background-image: url("./img/scene-10-a.PNG");
+    }
+
     .bg-01, .bg-02, .bg-03, .black-bg, .effect-01, .bg-03-down, .scene-09-books, .scene-09-pizza{
         position: absolute;
         top: 0;
