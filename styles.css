@@ -523,6 +523,7 @@ body{
         98%{
             background-image: url("./img/scene-17-c.PNG");          
         }
+    }
 
 /*small desktop*/     
 @media screen and (max-height:720px){
