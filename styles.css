@@ -296,6 +296,14 @@ body{
         animation-iteration-count: infinite;
     }
 
+    .frame>.scene-17{
+        
+        background-image: url("./img/scene-17-a.PNG");
+        animation-name: scene-17 ;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+    }
+
     .bg-01, .bg-02, .bg-03, .black-bg, .effect-01, .bg-03-down, .scene-09-books, .scene-09-pizza{
         position: absolute;
         top: 0;
@@ -493,6 +501,29 @@ body{
         }
     }
 
+    
+    @keyframes scene-17 {
+        0%{
+            background-image: url("./img/scene-17-a.PNG");    
+        }
+        33%{
+            background-image: url("./img/scene-17-a.PNG");               
+        }
+
+        35%{
+            background-image: url("./img/scene-17-b.PNG");          
+        }
+
+        66%{
+            background-image: url("./img/scene-17-b.PNG");          
+        }
+        69%{
+            background-image: url("./img/scene-17-c.PNG");          
+        }
+        98%{
+            background-image: url("./img/scene-17-c.PNG");          
+        }
+
 /*small desktop*/     
 @media screen and (max-height:720px){
 
@@ -609,6 +640,7 @@ body{
         font-size: 20px;
     }
 }
+
 
 
 
