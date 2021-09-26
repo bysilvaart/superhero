@@ -155,8 +155,6 @@ body{
         width: var(--width);
         height: var(--width);
         z-index: -1;
-        width: var(--width);
-        height: var(--width);
         animation-iteration-count: infinite;
         display: grid;
     }
