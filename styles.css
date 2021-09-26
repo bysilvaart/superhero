@@ -304,6 +304,14 @@ body{
         animation-timing-function: ease-in;
     }
 
+    .frame>.scene-18{
+        
+        background-image: url("./img/scene-18-a.PNG");
+        animation-name: scene-18;
+        animation-duration: 3s;
+        animation-timing-function: ease-in;
+    }
+
     .bg-01, .bg-02, .bg-03, .black-bg, .effect-01, .bg-03-down, .scene-09-books, .scene-09-pizza, .bg-scene-17{
         position: absolute;
         top: 0;
@@ -529,6 +537,49 @@ body{
         }
     }
 
+    @keyframes scene-18 {
+        0%{
+            background-image: url("./img/scene-18-a.PNG");    
+        }
+        23%{
+            background-image: url("./img/scene-18-a.PNG");               
+        }
+
+        25%{
+            background-image: url("./img/scene-18-b.PNG");          
+        }
+
+        30%{
+            background-image: url("./img/scene-18-b.PNG");          
+        }
+        33%{
+            background-image: url("./img/scene-18-a.PNG");          
+        }
+        38%{
+            background-image: url("./img/scene-18-a.PNG");          
+        }
+        40%{
+            background-image: url("./img/scene-18-b.PNG");          
+        }
+        45%{
+            background-image: url("./img/scene-18-b.PNG");          
+        }
+        47%{
+            background-image: url("./img/scene-18-a.PNG");          
+        }
+        58%{
+            background-image: url("./img/scene-18-a.PNG");          
+        }
+        60%{
+            background-image: url("./img/scene-18-b.PNG");          
+        }
+        70%{
+            background-image: url("./img/scene-18-b.PNG");          
+        }
+        72%{
+            background-image: url("./img/scene-18-a.PNG");          
+        }
+    }
 /*small desktop*/     
 @media screen and (max-height:720px){
 
