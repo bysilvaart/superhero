@@ -30,6 +30,44 @@ body{
     font-family: 'Red Hat Text', sans-serif;
 }
 
+.disclaimer{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    place-content: center;
+    
+    animation-timing-function: ease;
+    animation-name: disclaimer;
+    animation-delay: 5s;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+
+    text-align: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+
+    font-family: 'Comic Neue', cursive;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+
+
+    @keyframes disclaimer {
+        from{
+            visibility: visible;
+            opacity: 100%;
+        }
+        to{
+            visibility: hidden;
+            opacity: 0%;
+        }
+    }
+
 .container{
     width: 100vw;
     height: 100vh;
