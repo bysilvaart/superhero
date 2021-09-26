@@ -44,7 +44,7 @@ body{
 .row{
     width: var(--width) ;
     height: var(--width);
-    border: 2px solid var(--graphite);
+    border: 2px solid var(--not-black);
     border-radius: var(--border-radius) var(--border-radius) 0 0 ;
     background-color: white;
     overflow: hidden;
@@ -114,10 +114,17 @@ body{
     border: 1px solid black;
 }
 
+.next:hover{
+    background-color: black;
+}
+
 .previous{
     background-color: var(--artic);
     color: var(--not-black);
     border: 1px solid var(--graphite);
+}
+.previous:hover{
+    background-color: var(--siberia);
 }
 
 
@@ -125,7 +132,7 @@ body{
     width: var(--width);
     height: var(--height-globe-text);
     background-color: white;
-    border: 2px solid var(--graphite);
+    border: 2px solid var(--not-black   );
     padding: 40px;
     text-align: center;
     border-radius: 0 0 var(--border-radius) var(--border-radius);
@@ -311,6 +318,15 @@ body{
         animation-duration: 3s;
         animation-timing-function: ease-in;
     }
+
+    .frame>.scene-19{
+        
+        background-image: url("./img/scene-19-a.PNG");
+        animation-name: scene-19;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+    }
+
 
     .bg-01, .bg-02, .bg-03, .black-bg, .effect-01, .bg-03-down, .scene-09-books, .scene-09-pizza, .bg-scene-17{
         position: absolute;
@@ -580,6 +596,51 @@ body{
             background-image: url("./img/scene-18-a.PNG");          
         }
     }
+
+    @keyframes scene-19 {
+        0%{
+            background-image: url("./img/scene-19-a.PNG");    
+        }
+        23%{
+            background-image: url("./img/scene-19-a.PNG");               
+        }
+
+        25%{
+            background-image: url("./img/scene-19-b.PNG");          
+        }
+
+        30%{
+            background-image: url("./img/scene-19-b.PNG");          
+        }
+        33%{
+            background-image: url("./img/scene-19-a.PNG");          
+        }
+        38%{
+            background-image: url("./img/scene-19-a.PNG");          
+        }
+        40%{
+            background-image: url("./img/scene-19-b.PNG");          
+        }
+        45%{
+            background-image: url("./img/scene-19-b.PNG");          
+        }
+        47%{
+            background-image: url("./img/scene-19-a.PNG");          
+        }
+        58%{
+            background-image: url("./img/scene-19-a.PNG");          
+        }
+        60%{
+            background-image: url("./img/scene-19-b.PNG");          
+        }
+        70%{
+            background-image: url("./img/scene-19-b.PNG");          
+        }
+        72%{
+            background-image: url("./img/scene-19-a.PNG");          
+        }
+    }
+
 /*small desktop*/     
 @media screen and (max-height:720px){
 
