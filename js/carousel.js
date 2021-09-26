@@ -53,6 +53,3 @@ carouselButtons.forEach(button => {
   });
 });
 
-
-console.log(widthFrame+"px de ancho y alto para el panel");
-console.log(numberOfImages+" viñetas");

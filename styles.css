@@ -325,7 +325,15 @@ body{
         animation-timing-function: ease;
     }
 
-    .bg-01, .bg-02, .bg-03, .black-bg, .effect-01, .bg-03-down, .scene-09-books, .scene-09-pizza, .bg-scene-17{
+    .frame>.scene-20{
+        
+        background-image: url("./img/scene-20-a.PNG");
+        animation-name: scene-20;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+    }
+
+    .bg-01, .bg-02, .bg-03, .black-bg, .effect-01, .bg-03-down, .scene-09-books, .scene-09-pizza, .bg-scene-17, .bg-scene-20{
         position: absolute;
         top: 0;
     }
@@ -353,6 +361,10 @@ body{
 
     .bg-scene-17{
         background-image: url("./img/scene-17-bg.PNG"); 
+    }
+
+    .bg-scene-20{
+        background-image: url("./img/scene-20-bg.PNG"); 
     }
 
     .black-bg{
@@ -636,6 +648,42 @@ body{
         72%{
             background-image: url("./img/scene-19-a.PNG");          
         }
+    }
+
+       
+    @keyframes scene-20 {
+        0%{
+            background-image: none;    
+        }
+        30%{
+            background-image: none;               
+        }
+
+        32%{
+            background-image: url("./img/scene-20-a.PNG");          
+        }
+
+        60%{
+            background-image: url("./img/scene-20-a.PNG");          
+        }
+
+        61%{
+            background-image: none;          
+        }
+        65%{
+            background-image: none;          
+        }
+        66%{
+            background-image: url("./img/scene-20-a.PNG");          
+        }
+        90%{
+            background-image: url("./img/scene-20-a.PNG");          
+        }
+        92%{
+            background-image: none;          
+        }
+
+
     }
 
 /*small desktop*/     
