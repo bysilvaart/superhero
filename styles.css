@@ -13,6 +13,7 @@
     --height-globe-text: 100px;
 
     --border-radius: 25px;
+    --dot: 8px;
 }
 
 *{  
@@ -201,7 +202,7 @@ body{
     .white-text{
         color: white;
     }
-    
+
     .frame{
         overflow: hidden;
     }
@@ -741,6 +742,58 @@ body{
 
 
     }
+
+      
+    .loading-dots {
+        text-align: center;
+        width: 100%;        
+    }
+    .loading-dots--1 {
+            animation: dot-keyframes 1.5s infinite ease-in-out;
+            animation-delay: 0.1s;
+            background-color: #000;
+            border-radius: 10px;
+            display: inline-block;
+            height: var(--dot);
+            width: var(--dot);        
+      }
+    .loading-dots--2 {
+        animation: dot-keyframes 1.5s infinite ease-in-out;
+        animation-delay: 0.5s;
+        background-color: #000;
+        border-radius: 10px;
+        display: inline-block;
+        height: var(--dot);
+        width: var(--dot);  
+      }
+      
+    .loading-dots--3{
+        animation: dot-keyframes 1.5s infinite ease-in-out;
+        animation-delay: 1s;
+        background-color: #000;
+        border-radius: 10px;
+        display: inline-block;
+        height: var(--dot);
+        width: var(--dot);  
+      }
+
+      
+    @keyframes dot-keyframes {
+        0% {
+          opacity: 0.3;
+          transform: scale(1);
+        }
+      
+        50% {
+          opacity: 1;
+          transform: scale(1.2);
+        }
+      
+        100% {
+          opacity: 0.3;
+          transform: scale(1);
+        }
+      }
 
 /*small desktop*/     
 @media screen and (max-height:720px){
