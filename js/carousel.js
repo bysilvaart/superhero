@@ -5,6 +5,8 @@ const widthFrame = getComputedStyle(document.documentElement).getPropertyValue("
 const buttonNext = document.querySelector('.next');
 const buttonPrevious = document.querySelector('.previous');
 const textGlobe = document.querySelector('.text-globe');
+const background = document.querySelector('body');
+const buttons = document.querySelector('.buttons');
 
 let dialogue = ["","¡Hola!<br>Como puedes notar me veo como una persona normal",
 "A quien le gusta mucho usar su teléfono",
@@ -43,11 +45,13 @@ carouselButtons.forEach(button => {
         if (imageIndex==1){
           buttonPrevious.classList.replace('visible','hidden');
         } 
-        if(imageIndex !== numberOfImages){
           buttonNext.classList.replace('hidden','visible');  
           textGlobe.setAttribute('style','background-color: white');
-          textGlobe.classList.remove('white-text');   
-        }
+          textGlobe.classList.remove('white-text'); 
+          background.setAttribute('style', 'background-color: var(--artic)');  
+          buttons.setAttribute('style','background-color: white');
+          buttonPrevious.setAttribute('style','background-color: var(--artic)');
+          buttonPrevious.classList.remove('white-text');
       }
 
     } else {
@@ -62,6 +66,12 @@ carouselButtons.forEach(button => {
           buttonNext.classList.replace('visible','hidden') ;
           textGlobe.setAttribute('style','background-color: var(--not-black)');
           textGlobe.classList.add('white-text');
+          background.setAttribute('style', 'background-color: var(--almost-black');
+          buttons.setAttribute('style','background-color: var(--not-black)');
+          buttonPrevious.setAttribute('style','background-color: var(--almost-black)');
+          buttonPrevious.classList.add('white-text');
+          
+          
         } 
       }
     } 
