@@ -4,6 +4,7 @@ const numberOfImages = document.querySelectorAll('.carousel .img').length;
 const widthFrame = getComputedStyle(document.documentElement).getPropertyValue("--width").split('px')[0]
 const buttonNext = document.querySelector('.next');
 const buttonPrevious = document.querySelector('.previous');
+const textGlobe = document.querySelector('.text-globe');
 
 let dialogue = ["","¡Hola!<br>Como puedes notar me veo como una persona normal",
 "A quien le gusta mucho usar su teléfono",
@@ -43,7 +44,9 @@ carouselButtons.forEach(button => {
           buttonPrevious.classList.replace('visible','hidden');
         } 
         if(imageIndex !== numberOfImages){
-          buttonNext.classList.replace('hidden','visible') ;     
+          buttonNext.classList.replace('hidden','visible');  
+          textGlobe.setAttribute('style','background-color: white');
+          textGlobe.classList.remove('white-text');   
         }
       }
 
@@ -53,10 +56,12 @@ carouselButtons.forEach(button => {
         translateX += parseInt(widthFrame);
         document.getElementById("text").innerHTML = dialogue[imageIndex];
         if (imageIndex!==1){
-          buttonPrevious.classList.replace('hidden','visible') ;     
+          buttonPrevious.classList.replace('hidden','visible');
         }
         if(imageIndex == numberOfImages){
           buttonNext.classList.replace('visible','hidden') ;
+          textGlobe.setAttribute('style','background-color: var(--not-black)');
+          textGlobe.classList.add('white-text');
         } 
       }
     } 
