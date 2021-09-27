@@ -52,6 +52,8 @@ carouselButtons.forEach(button => {
           buttons.setAttribute('style','background-color: white');
           buttonPrevious.setAttribute('style','background-color: var(--artic)');
           buttonPrevious.classList.remove('white-text');
+          buttonPrevious.classList.replace('border-black', 'border-grey');
+          buttons.classList.replace('border-black', 'border-grey');
       }
 
     } else {
@@ -70,6 +72,8 @@ carouselButtons.forEach(button => {
           buttons.setAttribute('style','background-color: var(--not-black)');
           buttonPrevious.setAttribute('style','background-color: var(--almost-black)');
           buttonPrevious.classList.add('white-text');
+          buttonPrevious.classList.replace('border-grey', 'border-black');
+          buttons.classList.replace('border-grey', 'border-black');
           
           
         } 
