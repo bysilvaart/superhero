@@ -136,6 +136,11 @@ body{
     
 }
 
+.buttons>button::selection{
+    background-color: var(--almost-black);
+    color: white;
+}
+
 .next{
     background-color: var(--not-black);
     color: white;
@@ -206,6 +211,11 @@ body{
     font-weight: 700;
     font-size: 18px;
    
+    }
+
+    .text-globe>p::selection{
+        background-color: var(--almost-black);
+        color: white;
     }
 
     .white-text{
