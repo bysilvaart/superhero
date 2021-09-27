@@ -56,6 +56,10 @@ body{
 
 }
 
+.disclaimer>h3{
+    margin-top: 100px;
+}
+
 
     @keyframes disclaimer {
         from{
@@ -115,23 +119,7 @@ body{
 
 }
 
-.next{
-    
-    animation-duration: 1.8s;
-    animation-timing-function: ease;
-    animation-name: float;
-    animation-delay: 0.2s;
-    animation-iteration-count: infinite;
-}
 
-@keyframes float {
-    0%{
-        transform: translateY(0%);
-    }
-    50%{
-        transform: translateY(-8%);
-    }
-}
 
 .buttons>button{
     width: 200px;
@@ -150,11 +138,27 @@ body{
     background-color: var(--not-black);
     color: white;
     border: 1px solid black;
+
+    animation-duration: 1.8s;
+    animation-timing-function: ease;
+    animation-name: float;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
 }
 
 .next:hover{
     background-color: black;
 }
+
+@keyframes float {
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(-8%);
+    }
+}
+
 
 .previous{
     background-color: var(--artic);
@@ -163,6 +167,14 @@ body{
 }
 .previous:hover{
     background-color: var(--siberia);
+}
+
+.visible{
+    visibility: visible;
+}
+
+.hidden{
+    visibility: hidden;
 }
 
 

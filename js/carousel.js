@@ -2,7 +2,8 @@ const carouselImages = document.querySelector('.carousel');
 const carouselButtons = document.querySelectorAll('.carousel__button');
 const numberOfImages = document.querySelectorAll('.carousel .img').length;
 const widthFrame = getComputedStyle(document.documentElement).getPropertyValue("--width").split('px')[0]
-
+const buttonNext = document.querySelector('.next');
+const buttonPrevious = document.querySelector('.previous');
 
 let dialogue = ["","¡Hola!<br>Como puedes notar me veo como una persona normal",
 "A quien le gusta mucho usar su teléfono",
@@ -38,17 +39,27 @@ carouselButtons.forEach(button => {
         imageIndex--;
         translateX -= parseInt(widthFrame);
         document.getElementById("text").innerHTML = dialogue[imageIndex];
-        console.log("viñeta: "+imageIndex);
+        if (imageIndex==1){
+          buttonPrevious.classList.replace('visible','hidden');
+        } 
+        if(imageIndex !== numberOfImages){
+          buttonNext.classList.replace('hidden','visible') ;     
+        }
       }
+
     } else {
       if (imageIndex !== numberOfImages) {
         imageIndex++;
         translateX += parseInt(widthFrame);
         document.getElementById("text").innerHTML = dialogue[imageIndex];
-        console.log("viñeta: "+imageIndex);
+        if (imageIndex!==1){
+          buttonPrevious.classList.replace('hidden','visible') ;     
+        }
+        if(imageIndex == numberOfImages){
+          buttonNext.classList.replace('visible','hidden') ;
+        } 
       }
-    }
-    
+    } 
     carouselImages.style.transform = `translateX(${translateX}px)`;
   });
 });
